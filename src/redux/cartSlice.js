@@ -2,11 +2,13 @@
 
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialState = {};
+const products = {};
 
 for (let i = 1; i <= 5; i++) {
-    initialState[i] = { id: i, product, quantity: 0 };
+    products[i] = { id: i, product: {}, quantity: 0 };
 }
+
+const initialState = { products, total: 0 };
 
 const cartSlice = createSlice({
     name: 'cart',
@@ -15,14 +17,62 @@ const cartSlice = createSlice({
         modifyCart: (state, action) => {
             const { product, quantity } = action.payload;
             const id = product.id;
-            return {
-                ...state,
-                [id]: {
-                    ...state[id],
-                    product,
-                    quantity
-                }
+
+            const prevQuantity = state.products[id]?.quantity || 0;
+            const difference = quantity - prevQuantity;
+
+            // Actualiza el producto
+            state.products[id] = {
+                ...state.products[id],
+                product,
+                quantity
+            };
+
+            // Actualiza el total
+            state.total += difference * product.price;
+        },
+        addProduct: (state, action) => {
+            const product = action.payload;
+            const id = product.id;
+
+            let prevQuantity = state.products[id]?.quantity || 0;
+            const quantity = prevQuantity + 1;
+
+            // Actualiza el producto
+            state.products[id] = {
+                ...state.products[id],
+                product,
+                quantity
+            };
+
+            // Actualiza el total
+            state.total += product.price;
+        },
+        removeProduct: (state, action) => {
+            const product = action.payload;
+            const id = product.id;
+
+            let prevQuantity = state.products[id]?.quantity || 0;
+            const quantity = prevQuantity - 1;
+
+            // Actualiza el producto
+            state.products[id] = {
+                ...state.products[id],
+                product,
+                quantity
+            };
+
+            // Actualiza el total
+            state.total -= product.price;
+        },
+        clearCart: (state) => {
+            // Recorremos todos los productos y ponemos su quantity en 0
+            for (const id in state.products) {
+                state.products[id].quantity = 0;
             }
+
+            // Reiniciamos el total
+            state.total = 0;
         }
 
     }
@@ -31,5 +81,5 @@ const cartSlice = createSlice({
 
 )
 
-export const { modifyCart } = cartSlice.actions;
+export const { modifyCart, addProduct, removeProduct, clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
