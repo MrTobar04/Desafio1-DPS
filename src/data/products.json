@@ -1,37 +1,122 @@
 [
   {
-    "id": 0,
-    "name": "Bebida fría",
-    "description": "Refrescante bebida ideal para días calurosos.",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmRGv26jkdZA_lUeeD3j12_IZxmShFRbVgw&s",
+    "id": 1,
+    "name": "Limonada natural",
+    "description": "Refrescante limonada hecha con limones frescos y un toque de menta.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKEV82nJnGAWncS1w_5fEsY3RU7-xCR8iGGg&s",
+    "category": "Bebida fría",
     "price": 4.00
   },
   {
-    "id": 1,
-    "name": "Bebida caliente",
-    "description": "Perfecta para reconfortarte en días fríos.",
-    "image": "https://torrefactory.coffee/cdn/shop/articles/americano.png?v=1677058023",
-    "price": 3.00
-  },
-  {
     "id": 2,
-    "name": "Postres de café",
-    "description": "Deliciosos postres con un toque de café.",
-    "image": "https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/4216cb5b181b75dea1062cb02762a963.jpg",
-    "price": 5.00
+    "name": "Té helado de durazno",
+    "description": "Bebida fría con un delicioso sabor a durazno, ideal para el verano.",
+    "image": "https://monin.lat/cdn/shop/files/32a24f16-36db-427a-90d8-6db7a2f49c4e-2_0e7dd733-8019-4142-bddf-b7d3c0ae86e2.png?v=1729528171",
+    "category": "Bebida fría",
+    "price": 4.00
   },
   {
     "id": 3,
-    "name": "Té",
-    "description": "Variedad de tés para relajarte y disfrutar.",
-    "image": "https://s1.elespanol.com/2015/01/09/cocinillas/cocinillas_2009864_115880140_1600x1000.jpg",
-    "price": 2.50
+    "name": "Agua de sandía",
+    "description": "Agua natural con trozos de sandía, sin azúcar añadida.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSirwA26My-SszMIqGEWMFYlj0Rw9yisOMbMw&s",
+    "category": "Bebida fría",
+    "price": 4.00
   },
   {
     "id": 4,
-    "name": "Sandwiches",
-    "description": "Sándwiches frescos y sabrosos para cualquier momento.",
-    "image": "https://www.southernliving.com/thmb/UW4kKKL-_M3WgP7pkL6Pb6lwcgM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ham_Sandwich_011-1-49227336bc074513aaf8fdbde440eafe.jpg",
+    "name": "Café espresso",
+    "description": "Café fuerte y concentrado para un impulso de energía instantáneo.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG",
+    "category": "Bebida caliente",
+    "price": 3.00
+  },
+  {
+    "id": 5,
+    "name": "Capuchino",
+    "description": "Clásico café con leche espumosa y un toque de cacao.",
+    "image": "https://www.paulinacocina.net/wp-content/uploads/2023/10/cafe-capuchino-paulina-cocina-recetas-1200x676.jpg",
+    "category": "Bebida caliente",
+    "price": 3.00
+  },
+  {
+    "id": 6,
+    "name": "Chocolate caliente",
+    "description": "Bebida espesa y caliente con cacao puro y leche cremosa.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTxBFvxL_1-R0Z74rxlwvDP-a_jdjmdw38Bw&s",
+    "category": "Bebida caliente",
+    "price": 3.00
+  },
+  {
+    "id": 7,
+    "name": "Tiramisú",
+    "description": "Postre italiano con capas de bizcocho, queso mascarpone y café.",
+    "image": "https://www.paulinacocina.net/wp-content/uploads/2020/01/receta-de-tiramisu-facil-y-economico-1740483918-800x800.jpg",
+    "category": "Postres de café",
+    "price": 5.00
+  },
+  {
+    "id": 8,
+    "name": "Flan de café",
+    "description": "Suave flan con sabor a café, perfecto para los amantes del espresso.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr2rUdQ8Zt_yhldoXtMdTzfy84rJVkQKtz1A&s",
+    "category": "Postres de café",
+    "price": 5.00
+  },
+  {
+    "id": 9,
+    "name": "Mousse de café",
+    "description": "Delicado mousse con intenso sabor a café y textura esponjosa.",
+    "image": "https://i.ytimg.com/vi/yFORDBLb5tU/maxresdefault.jpg",
+    "category": "Postres de café",
+    "price": 5.00
+  },
+  {
+    "id": 10,
+    "name": "Té de manzanilla",
+    "description": "Infusión calmante ideal para la digestión y relajación.",
+    "image": "https://image.tuasaude.com/media/article/l4/4r/beneficios-do-cha-de-camomila_13768.jpg",
+    "category": "Té",
+    "price": 2.50
+  },
+  {
+    "id": 11,
+    "name": "Té chai",
+    "description": "Té negro especiado con canela, clavo, jengibre y leche.",
+    "image": "https://www.splenda.com/wp-content/themes/bistrotheme/assets/recipe-images/chai-tea-blend.jpg",
+    "category": "Té",
+    "price": 2.50
+  },
+  {
+    "id": 12,
+    "name": "Té rojo",
+    "description": "Té con sabor intenso y propiedades antioxidantes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIy7r_EFU9E_Ah6dK0Ddh0MfyZYlhRLXe44w&s",
+    "category": "Té",
+    "price": 2.50
+  },
+  {
+    "id": 13,
+    "name": "Sándwich de jamón y queso",
+    "description": "Clásico sándwich con jamón cocido y queso derretido en pan suave.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKuWI7NgJ2VRPK69fIAAE9cxLqI9JfJPNAgQ&s",
+    "category": "Sandwiches",
+    "price": 6.00
+  },
+  {
+    "id": 14,
+    "name": "Sándwich de pollo a la parrilla",
+    "description": "Pollo marinado a la parrilla con vegetales frescos y pan integral.",
+    "image": "https://www.bimbo.es/uploads/88-sandwich-de-pollo-a-la-parricha-con-tomates-disecados-champinones-rucula-y-alioli2.webp",
+    "category": "Sandwiches",
+    "price": 6.00
+  },
+  {
+    "id": 15,
+    "name": "Sándwich vegetariano",
+    "description": "Relleno de aguacate, tomate, lechuga y queso en pan artesanal.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRvzkIQAXydHXfXZBBcpiSG2N7Re0WVW4eKA&s",
+    "category": "Sandwiches",
     "price": 6.00
   }
 ]

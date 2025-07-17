@@ -1,10 +1,10 @@
 'use client'
 
 import { createSlice } from '@reduxjs/toolkit';
-
+import data from "../data/products"; 
 const products = {};
 
-for (let i = 1; i <= 5; i++) {
+for (let i = 1; i <= data.lenght; i++) {
     products[i] = { id: i, product: {}, quantity: 0 };
 }
 
@@ -53,7 +53,7 @@ const cartSlice = createSlice({
             const id = product.id;
 
             let prevQuantity = state.products[id]?.quantity || 0;
-            const quantity = prevQuantity - 1;
+            const quantity = 0;
 
             // Actualiza el producto
             state.products[id] = {
@@ -63,7 +63,7 @@ const cartSlice = createSlice({
             };
 
             // Actualiza el total
-            state.total -= product.price;
+            state.total -= prevQuantity*product.price;
         },
         clearCart: (state) => {
             // Recorremos todos los productos y ponemos su quantity en 0

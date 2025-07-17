@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { modifyCart, addProduct } from "@/redux/cartSlice";
+import { addProduct } from "@/redux/cartSlice";
 import products from "../data/products";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/product-grid.css';  

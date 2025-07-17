@@ -43,7 +43,7 @@ const Navbar = () => {
 
       {showCart && (
         <div className="cart-dropdown shadow">
-          {cart.length === 0 ? (
+          {onCart === 0 ? (
             <p className="empty-cart">El carrito está vacío</p>
           ) : (
             <>
