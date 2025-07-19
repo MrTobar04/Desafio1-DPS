@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { modifyCart, removeProduct, clearCart } from "@/redux/cartSlice";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/navbar.css';
+import Image from 'next/image';
+import logoCafe from '../data/logo.jpg';
 
 const Navbar = () => {
   const [showCart, setShowCart] = useState(false);
@@ -34,7 +36,23 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-himalaya">
       <div className="container-fluid">
-        <a className="navbar-brand cafe-title" href="#"> Café Himalaya</a>
+        <div>
+
+
+          <Image
+            src={logoCafe}
+            alt="Logo Café Himalaya"
+            width={110}
+            height={70}
+            className="logo-cafe me-2"
+          />
+
+          <a className="navbar-brand cafe-title" href="#"> Inicio </a>
+          <a className="navbar-brand cafe-title" href="#"> Productos </a>
+          <a className="navbar-brand cafe-title" href="#"> Nuestra Marca </a>
+        </div>
+
+
 
         <button className="btn cart-toggle-btn" onClick={() => setShowCart(!showCart)}>
           🛒 Carrito ({onCart})
