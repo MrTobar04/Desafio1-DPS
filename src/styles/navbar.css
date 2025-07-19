@@ -1,5 +1,5 @@
 .navbar-himalaya {
-  background-color: #FBEDE3;
+  background-color: #ebddcb;
   padding: 1.5rem;
   position: relative;
 }
@@ -11,8 +11,8 @@
 }
 
 .navbar .cart-toggle-btn {
-  background-color: #E3C4A8;
-  color: #5C4B3B;
+  background-color: #5C4B3B;
+  color: #ebddcb;
   border: none;
   font-weight: 600;
   padding: 0.75rem 1.25rem;
@@ -21,7 +21,7 @@
 }
 
 .cart-toggle-btn:hover {
-  background-color: #d4b093;
+  background-color: #ebddcb;
 }
 
 .navbar .cart-dropdown {
@@ -29,7 +29,7 @@
   top: 100%;
   right: 1rem;
   width: 340px;
-  background-color: #FFF0EB;
+  background-color: #ebddcb;
   padding: 1.5rem;
   border-radius: 0.75rem;
   z-index: 10;

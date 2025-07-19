@@ -8,7 +8,7 @@
 }
 
 .product-card {
-  background-color: #FFF0EB;
+  background-color: #ebddcb;
   border: none;
   transition: transform 0.2s ease-in-out;
 }
@@ -36,7 +36,7 @@
 }
 
 .product-btn {
-  background-color: #E3C4A8;
+  background-color: #5C4B3B;
   color: white;
   border: none;
 }
